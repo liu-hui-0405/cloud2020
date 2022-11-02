@@ -12,6 +12,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GateWayConfig
 {
+    /**
+     * 配置路由规则
+     * 当访问地址http://localhost:9527/guonei时会自动转发到地址：http://news.baidu.com/guonei
+     * @param routeLocatorBuilder
+     * @return
+     */
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder routeLocatorBuilder)
     {
